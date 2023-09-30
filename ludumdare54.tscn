@@ -267,3 +267,6 @@ position = Vector2(760, 339)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_0n3p2")
+
+[node name="score" parent="." instance=ExtResource("10_5oqj3")]
+position = Vector2(648, 68)
