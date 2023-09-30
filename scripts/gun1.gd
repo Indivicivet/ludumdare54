@@ -9,7 +9,7 @@ func _process(delta):
 		var bullet_inst = bullet_type_1.instantiate()
 		owner.add_child(bullet_inst)
 		bullet_inst.transform = self.global_transform
-		var mouse_pos = get_viewport().get_mouse_position()
-		var dir_x = mouse_pos.x - self.global_transform.get_origin().x
-		var dir_y = mouse_pos.y - self.global_transform.get_origin().y
-		bullet_inst.dir = Vector2(dir_x, dir_y)
+		bullet_inst.dir = (
+			get_viewport().get_mouse_position()
+			- self.global_transform.get_origin()
+		)
