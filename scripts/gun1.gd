@@ -12,6 +12,4 @@ func _process(delta):
 		var mouse_pos = get_viewport().get_mouse_position()
 		var dir_x = mouse_pos.x - self.global_transform.get_origin().x
 		var dir_y = mouse_pos.y - self.global_transform.get_origin().y
-		var dir_r = (dir_x ** 2 + dir_y ** 2) ** 0.5
-		bullet_inst.dir_cos = dir_x / dir_r
-		bullet_inst.dir_sin = dir_y / dir_r
+		bullet_inst.dir = Vector2(dir_x, dir_y)
