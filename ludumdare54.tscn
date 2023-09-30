@@ -2,14 +2,105 @@
 
 [ext_resource type="Texture2D" uid="uid://dql0beg06i55b" path="res://icon.svg" id="1_7c11r"]
 [ext_resource type="Script" path="res://player.gd" id="1_40gfe"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0201y"]
-size = Vector2(64, 64)
+[ext_resource type="PackedScene" uid="uid://dmbopa58apven" path="res://block_solid.tscn" id="3_d706m"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="many_blocks" type="Node2D" parent="."]
+position = Vector2(610, 373)
+
+[node name="block_solid" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, -225)
+
+[node name="block_solid2" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-160, -225)
+
+[node name="block_solid3" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-96, -225)
+
+[node name="block_solid4" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-32, -225)
+
+[node name="block_solid5" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(32, -225)
+
+[node name="block_solid6" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(96, -225)
+
+[node name="block_solid7" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(158, -225)
+
+[node name="block_solid8" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(160, -225)
+
+[node name="block_solid9" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, -225)
+
+[node name="block_solid10" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, -161)
+
+[node name="block_solid18" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, -161)
+
+[node name="block_solid19" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, -96)
+
+[node name="block_solid27" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, -96)
+
+[node name="block_solid28" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, -32)
+
+[node name="block_solid36" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, -32)
+
+[node name="block_solid37" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, 32)
+
+[node name="block_solid45" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, 32)
+
+[node name="block_solid46" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, 96)
+
+[node name="block_solid54" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, 96)
+
+[node name="block_solid55" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, 161)
+
+[node name="block_solid63" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, 161)
+
+[node name="block_solid64" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-224, 225)
+
+[node name="block_solid65" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-160, 225)
+
+[node name="block_solid66" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-96, 225)
+
+[node name="block_solid67" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(-32, 225)
+
+[node name="block_solid68" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(32, 225)
+
+[node name="block_solid69" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(96, 225)
+
+[node name="block_solid70" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(158, 225)
+
+[node name="block_solid71" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(160, 225)
+
+[node name="block_solid72" parent="many_blocks" instance=ExtResource("3_d706m")]
+position = Vector2(224, 225)
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(402, 366)
+position = Vector2(589, 366)
 script = ExtResource("1_40gfe")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
@@ -19,14 +110,3 @@ texture = ExtResource("1_7c11r")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
 scale = Vector2(0.2, 0.2)
 polygon = PackedVector2Array(64, -59.6, 64, 59, 59.6, 64, -59, 64, -64, 59.6, -64, -59.6, -59, -63.9, 59, -64)
-
-[node name="block" type="StaticBody2D" parent="."]
-position = Vector2(396, 194)
-
-[node name="Sprite2D" type="Sprite2D" parent="block"]
-texture = ExtResource("1_7c11r")
-region_enabled = true
-region_rect = Rect2(24, 24, 64, 64)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="block"]
-shape = SubResource("RectangleShape2D_0201y")
