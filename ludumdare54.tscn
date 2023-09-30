@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b4o7w1uc8bq1o"]
+[gd_scene load_steps=8 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Script" path="res://scripts/spacescroll.gd" id="1_8oy62"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://graphics/tex2_0001__P2000288.png" id="2_fxmil"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="4_niys2"]
 [ext_resource type="Script" path="res://scripts/gun1.gd" id="5_1et4n"]
 [ext_resource type="Texture2D" uid="uid://dql0beg06i55b" path="res://graphics/icon.svg" id="5_5p1cn"]
+[ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="7_p865s"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -113,6 +114,116 @@ position = Vector2(160, 224)
 
 [node name="block_solid72" parent="many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, 224)
+
+[node name="manytiles" type="Node2D" parent="."]
+
+[node name="floor_or_block" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(450, 213)
+
+[node name="floor_or_block2" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(514, 213)
+
+[node name="floor_or_block3" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(578, 213)
+
+[node name="floor_or_block4" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(642, 213)
+
+[node name="floor_or_block5" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(706, 213)
+
+[node name="floor_or_block6" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(770, 213)
+
+[node name="floor_or_block7" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(450, 277)
+
+[node name="floor_or_block8" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(514, 277)
+
+[node name="floor_or_block9" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(578, 277)
+
+[node name="floor_or_block10" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(642, 277)
+
+[node name="floor_or_block11" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(706, 277)
+
+[node name="floor_or_block12" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(770, 277)
+
+[node name="floor_or_block13" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(450, 341)
+
+[node name="floor_or_block14" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(514, 341)
+
+[node name="floor_or_block15" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(578, 341)
+
+[node name="floor_or_block16" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(642, 341)
+
+[node name="floor_or_block17" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(706, 341)
+
+[node name="floor_or_block18" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(770, 341)
+
+[node name="floor_or_block19" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(450, 405)
+
+[node name="floor_or_block20" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(514, 405)
+
+[node name="floor_or_block21" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(578, 405)
+
+[node name="floor_or_block22" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(642, 405)
+
+[node name="floor_or_block23" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(706, 405)
+
+[node name="floor_or_block24" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(770, 405)
+
+[node name="floor_or_block25" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(450, 469)
+
+[node name="floor_or_block26" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(514, 469)
+
+[node name="floor_or_block27" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(578, 469)
+
+[node name="floor_or_block28" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(642, 469)
+
+[node name="floor_or_block29" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(706, 469)
+
+[node name="floor_or_block30" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(770, 469)
+
+[node name="floor_or_block31" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(450, 533)
+
+[node name="floor_or_block32" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(514, 533)
+
+[node name="floor_or_block33" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(578, 533)
+
+[node name="floor_or_block34" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(642, 533)
+
+[node name="floor_or_block35" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(706, 533)
+
+[node name="floor_or_block36" parent="manytiles" instance=ExtResource("7_p865s")]
+position = Vector2(770, 533)
 
 [node name="player" type="CharacterBody2D" parent="."]
 position = Vector2(589, 366)
