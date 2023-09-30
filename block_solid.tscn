@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmbopa58apven"]
 
 [ext_resource type="Texture2D" uid="uid://dm7cxf1pr2r2f" path="res://graphics/tex3_0001__P2000288.png" id="1_6p85x"]
-[ext_resource type="Script" path="res://blocksprite.gd" id="2_5ub6b"]
+[ext_resource type="Script" path="res://scripts/blocksprite.gd" id="2_3kowk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0201y"]
 size = Vector2(64, 64)
@@ -13,7 +13,7 @@ position = Vector2(0, -1)
 texture = ExtResource("1_6p85x")
 region_enabled = true
 region_rect = Rect2(24, 24, 64, 64)
-script = ExtResource("2_5ub6b")
+script = ExtResource("2_3kowk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_0201y")
