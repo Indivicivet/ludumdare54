@@ -1,7 +1,7 @@
 extends Node2D
 
 
-const SPEED = 15.0;
+const SPEED = 3.0;
 const WIDTH = 2592;
 const HEIGHT = 1944;
 const RANDOM_CHANGE_AVERAGE_TIME = 10;
