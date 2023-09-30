@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b4o7w1uc8bq1o"]
+[gd_scene load_steps=10 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Script" path="res://scripts/spacescroll.gd" id="1_8oy62"]
 [ext_resource type="Script" path="res://global_game_manager.gd" id="1_v3hpp"]
@@ -8,6 +8,9 @@
 [ext_resource type="Script" path="res://scripts/gun1.gd" id="5_1et4n"]
 [ext_resource type="Texture2D" uid="uid://dyql1ycffaje6" path="res://graphics/player0001.png" id="6_w1o1e"]
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="7_p865s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
+radius = 26.0192
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_v3hpp")
@@ -238,6 +241,5 @@ texture = ExtResource("6_w1o1e")
 [node name="gun1" type="Node2D" parent="player"]
 script = ExtResource("5_1et4n")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player"]
-scale = Vector2(1.03, 1.03)
-polygon = PackedVector2Array(10, -23, 12, -23, 12, -22, 14, -22, 14, -21, 16, -21, 16, -20, 17, -20, 17, -19, 18, -19, 18, -18, 20, -18, 20, -17, 21, -17, 21, -15, 22, -15, 22, -14, 23, -14, 23, -13, 24, -13, 24, -9, 25, -9, 25, 10, 24, 10, 24, 14, 23, 14, 23, 15, 22, 15, 22, 16, 21, 16, 21, 18, 20, 18, 20, 19, 18, 19, 18, 20, 17, 20, 17, 21, 16, 21, 16, 22, 14, 22, 14, 23, 12, 23, 12, 24, 10, 24, 10, 25, -11, 25, -11, 24, -13, 24, -13, 23, -15, 23, -15, 22, -17, 22, -17, 21, -18, 21, -18, 20, -19, 20, -19, 19, -21, 19, -21, 18, -22, 18, -22, 16, -23, 16, -23, 15, -24, 15, -24, 14, -25, 14, -25, 10, -26, 10, -26, -9, -25, -9, -25, -13, -24, -13, -24, -14, -23, -14, -23, -15, -22, -15, -22, -17, -21, -17, -21, -18, -19, -18, -19, -19, -18, -19, -18, -20, -17, -20, -17, -21, -15, -21, -15, -22, -13, -22, -13, -23, -11, -23, -11, -24, 10, -24)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+shape = SubResource("CircleShape2D_gwbx5")
