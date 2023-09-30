@@ -266,5 +266,3 @@ position = Vector2(760, 339)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_0n3p2")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
