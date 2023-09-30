@@ -10,11 +10,15 @@ var healing = 0.0
 
 
 func liquify():
+	healing = 0
+	charring = 0
 	get_node("tilesprite").texture = sprite_floor
 	get_node("CollisionShape2D").set_deferred("disabled", true)
 
 
 func solidify():
+	healing = 0
+	charring = 0
 	get_node("tilesprite").texture = sprite_solid
 	get_node("CollisionShape2D").set_deferred("disabled", false)
 
@@ -22,8 +26,6 @@ func solidify():
 func got_shot(other):
 	healing += 0.1
 	if healing > 1:
-		healing = 0
-		charring = 0
 		liquify()
 
 
