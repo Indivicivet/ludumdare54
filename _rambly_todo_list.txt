@@ -8,6 +8,7 @@ MLP #1
 - char ground as you fire (main mechanic)
 
 MLP
+- sensible not spawning blocks under you?/letting you get pushed outside
 - sensible restart/retry after you die
 - replace the placeholdery player/enemy icons
 - sort out fire rate
@@ -21,3 +22,5 @@ bonus
 - different maps
 - alt fire?
 - clearer char/heal indicators
+- sfx for solidifying/liquifying blocks
+- sfx for spawning/killing enemies
