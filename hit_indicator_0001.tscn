@@ -1,9 +1,45 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdxlgyewueqyg"]
+[gd_scene load_steps=7 format=3 uid="uid://bdxlgyewueqyg"]
 
 [ext_resource type="AudioStream" uid="uid://bxiehdfdn261l" path="res://sfx/hitHurt0001.wav" id="1_w6osx"]
+[ext_resource type="Texture2D" uid="uid://ddxi2g5dwcj2m" path="res://graphics/explosion0001_f0001.png" id="2_edbpn"]
+[ext_resource type="Texture2D" uid="uid://dalh1b02jo6c3" path="res://graphics/explosion0001_f0002.png" id="3_fwd51"]
+[ext_resource type="Texture2D" uid="uid://b74ctqmu1j8rd" path="res://graphics/explosion0001_f0003.png" id="4_rm4e6"]
+[ext_resource type="Texture2D" uid="uid://c8p373qkq7u27" path="res://graphics/blank64x64.png" id="5_0ntiq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u64co"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("2_edbpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fwd51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rm4e6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fwd51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_edbpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0ntiq")
+}],
+"loop": false,
+"name": &"default",
+"speed": 24.0
+}]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1_w6osx")
 autoplay = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_u64co")
+autoplay = "default"
+frame = 1
+frame_progress = 0.8619
