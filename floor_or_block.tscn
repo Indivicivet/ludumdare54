@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://telbw0j0atkg"]
 
 [ext_resource type="Texture2D" uid="uid://dm7cxf1pr2r2f" path="res://graphics/tex3_0001__P2000288.png" id="1_627vw"]
-[ext_resource type="Script" path="res://floor_or_block.gd" id="1_sfq82"]
+[ext_resource type="Script" path="res://scripts/floor_or_block.gd" id="1_s7b7f"]
 [ext_resource type="Script" path="res://scripts/blocksprite.gd" id="2_jgymb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0201y"]
@@ -9,7 +9,7 @@ size = Vector2(64, 64)
 
 [node name="floor_or_block" type="StaticBody2D"]
 position = Vector2(0, -1)
-script = ExtResource("1_sfq82")
+script = ExtResource("1_s7b7f")
 
 [node name="tilesprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_627vw")

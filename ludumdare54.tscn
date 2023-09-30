@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Script" path="res://scripts/spacescroll.gd" id="1_8oy62"]
-[ext_resource type="Script" path="res://global_game_manager.gd" id="1_v3hpp"]
+[ext_resource type="Script" path="res://scripts/global_game_manager.gd" id="1_hjkb4"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://graphics/tex2_0001__P2000288.png" id="2_fxmil"]
 [ext_resource type="PackedScene" uid="uid://dmbopa58apven" path="res://block_solid.tscn" id="3_d706m"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="4_niys2"]
@@ -19,7 +19,7 @@ polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(411, 178, 805, 177, 805, 573, 409, 571)])
 
 [node name="game_root" type="Node2D"]
-script = ExtResource("1_v3hpp")
+script = ExtResource("1_hjkb4")
 
 [node name="spacescroll" type="Node2D" parent="."]
 script = ExtResource("1_8oy62")
