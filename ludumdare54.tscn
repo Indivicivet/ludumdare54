@@ -1,13 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://b4o7w1uc8bq1o"]
+[gd_scene load_steps=6 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Texture2D" uid="uid://dql0beg06i55b" path="res://icon.svg" id="1_7c11r"]
 [ext_resource type="Script" path="res://player.gd" id="1_40gfe"]
+[ext_resource type="Script" path="res://spacescroll.gd" id="1_ggafe"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://tex2_0001__P2000288.png" id="1_ix00u"]
 [ext_resource type="PackedScene" uid="uid://dmbopa58apven" path="res://block_solid.tscn" id="3_d706m"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="spacescroll" type="Node2D" parent="."]
+script = ExtResource("1_ggafe")
 
 [node name="space" type="Sprite2D" parent="spacescroll"]
 texture = ExtResource("1_ix00u")
