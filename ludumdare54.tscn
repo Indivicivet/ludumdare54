@@ -107,9 +107,6 @@ position = Vector2(32, 224)
 [node name="block_solid69" parent="many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(96, 224)
 
-[node name="block_solid70" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(158, 225)
-
 [node name="block_solid71" parent="many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(160, 224)
 
