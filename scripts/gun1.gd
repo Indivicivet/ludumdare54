@@ -1,6 +1,9 @@
 extends Node2D
 
 
+const RANDOM_SPREAD = 3;
+
+var rng = RandomNumberGenerator.new()
 var bullet_type_1 = preload("res://bullet_type_1.tscn")
 
 
@@ -12,4 +15,7 @@ func _process(delta):
 		bullet_inst.dir = (
 			get_viewport().get_mouse_position()
 			- self.global_transform.get_origin()
+			+ Vector2(
+				rng.randf_range(-1, 1), rng.randf_range(-1, 1)
+			) * RANDOM_SPREAD / 2
 		)
