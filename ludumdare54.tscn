@@ -21,7 +21,7 @@ vertices = PackedVector2Array(411, 178, 805, 177, 805, 573, 409, 571)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(411, 178, 805, 177, 805, 573, 409, 571)])
 
-[node name="Node2D" type="Node2D"]
+[node name="game_root" type="Node2D"]
 script = ExtResource("1_v3hpp")
 
 [node name="spacescroll" type="Node2D" parent="."]

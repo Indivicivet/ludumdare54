@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
 
-const SPEED = 50
+const SPEED = 100
 
 var target_pos = Vector2(0, 0)
 
 
 @onready var navigation_agent = get_node("NavigationAgent2D")
+@onready var player = get_tree().get_root().get_node("game_root").get_node("player")
 
 
 func _ready():
@@ -21,6 +22,7 @@ func pathfinding_setup():
 
 
 func _physics_process(delta):
+	navigation_agent.target_position = player.global_position
 	if navigation_agent.is_navigation_finished():
 		return
 
