@@ -4,7 +4,9 @@ extends Node2D
 const SPEED = 15.0;
 const WIDTH = 2592;
 const HEIGHT = 1944;
+const RANDOM_CHANGE_AVERAGE_TIME = 10;
 
+var rng = RandomNumberGenerator.new()
 var dir_cos = 0.7;
 var dir_sin = (1 - dir_cos ** 2) ** 0.5;
 
@@ -15,8 +17,11 @@ func _ready():
 
 
 func choose_direction():
-	dir_cos = -0.7;
-	dir_sin = (1 - dir_cos ** 2) ** 0.5;
+	var x = rng.randf_range(-1, 1)
+	var y = rng.randf_range(-1, 1)
+	var r = (x ** 2 + y ** 2) ** 0.5
+	dir_cos = x / r
+	dir_sin = y / r
 
 
 func _process(delta):
@@ -30,3 +35,5 @@ func _process(delta):
 		self.position.y -= HEIGHT;
 	if self.position.y < -HEIGHT:
 		self.position.y += HEIGHT;
+	if rng.randf() < RANDOM_CHANGE_AVERAGE_TIME * delta:
+		choose_direction()
