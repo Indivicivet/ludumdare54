@@ -5,6 +5,8 @@ var sprite_floor = preload("res://graphics/tex3_0001__P2000288.png")
 
 var rng = RandomNumberGenerator.new()
 
+var charring = 0.0
+
 
 func solidify():
 	get_node("tilesprite").texture = sprite_solid
@@ -12,5 +14,11 @@ func solidify():
 
 
 func _ready():
-	if rng.randf() < 0.2:
+	charring = rng.randf()
+
+
+func _process(delta):
+	# print(charring)
+	charring += 0.1 * delta
+	if charring > 1:
 		solidify()
