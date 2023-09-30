@@ -35,5 +35,5 @@ func _process(delta):
 		self.position.y -= HEIGHT;
 	if self.position.y < -HEIGHT:
 		self.position.y += HEIGHT;
-	if rng.randf() < RANDOM_CHANGE_AVERAGE_TIME * delta:
+	if rng.randf() < delta / RANDOM_CHANGE_AVERAGE_TIME:
 		choose_direction()
