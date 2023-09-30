@@ -7,7 +7,21 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="spacescroll" type="Node2D" parent="."]
+
+[node name="space" type="Sprite2D" parent="spacescroll"]
+texture = ExtResource("1_ix00u")
+
+[node name="space2" type="Sprite2D" parent="spacescroll"]
+position = Vector2(2592, 7)
+texture = ExtResource("1_ix00u")
+
+[node name="space3" type="Sprite2D" parent="spacescroll"]
+position = Vector2(0, 1944)
+texture = ExtResource("1_ix00u")
+
+[node name="space4" type="Sprite2D" parent="spacescroll"]
+position = Vector2(2592, 1944)
 texture = ExtResource("1_ix00u")
 
 [node name="many_blocks" type="Node2D" parent="."]
