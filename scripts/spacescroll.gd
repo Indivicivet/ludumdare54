@@ -1,14 +1,13 @@
 extends Node2D
 
 
-const SPEED = 3.0;
+const SPEED = 200.0;
 const WIDTH = 2592;
 const HEIGHT = 1944;
 const RANDOM_CHANGE_AVERAGE_TIME = 10;
 
 var rng = RandomNumberGenerator.new()
-var dir_cos = 0.7;
-var dir_sin = (1 - dir_cos ** 2) ** 0.5;
+var dir = Vector2(1, 0)
 
 
 # Called when the node enters the scene tree for the first time.
@@ -17,16 +16,11 @@ func _ready():
 
 
 func choose_direction():
-	var x = rng.randf_range(-1, 1)
-	var y = rng.randf_range(-1, 1)
-	var r = (x ** 2 + y ** 2) ** 0.5
-	dir_cos = x / r
-	dir_sin = y / r
+	dir = Vector2(rng.randf_range(-1, 1), rng.randf_range(-1, 1))
 
 
 func _process(delta):
-	self.position.x += SPEED * dir_cos;
-	self.position.y += SPEED * dir_sin;
+	self.position += SPEED * dir.normalized() * delta;
 	if self.position.x > 0:
 		self.position.x -= WIDTH;
 	if self.position.x < -WIDTH:
