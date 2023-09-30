@@ -24,3 +24,5 @@ bonus
 - clearer char/heal indicators
 - sfx for solidifying/liquifying blocks
 - sfx for spawning/killing enemies
+- sort out how slopes are treated (since we're top-down) - up_direction etc
+- better dying ^^
