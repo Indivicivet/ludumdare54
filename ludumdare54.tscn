@@ -11,8 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://c4i8t3vyd1rqu" path="res://enemy_type_1.tscn" id="9_1g1nj"]
 [ext_resource type="PackedScene" uid="uid://d2mwe78xq0kar" path="res://score.tscn" id="10_5oqj3"]
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="11_gi10b"]
+[ext_resource type="Script" path="res://scripts/health_indicator.gd" id="12_30iwo"]
 [ext_resource type="Texture2D" uid="uid://dm7cxf1pr2r2f" path="res://graphics/tex3_0001__P2000288.png" id="12_088op"]
-[ext_resource type="Script" path="res://health_indicator.gd" id="12_jh7kp"]
 [ext_resource type="Texture2D" uid="uid://bf1ro4eol7gxo" path="res://graphics/tex1_0001__P2000281.png" id="14_i6hpi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
@@ -285,7 +285,7 @@ autostart = true
 
 [node name="health_indicator" type="Node2D" parent="."]
 position = Vector2(610, 675)
-script = ExtResource("12_jh7kp")
+script = ExtResource("12_30iwo")
 
 [node name="Sprite2Dbg" type="Sprite2D" parent="health_indicator"]
 texture = ExtResource("14_i6hpi")
