@@ -42,3 +42,7 @@ func _physics_process(delta):
 		navigation_agent.get_next_path_position() - global_position
 	).normalized() * SPEED
 	move_and_slide()
+	for i in get_slide_collision_count():
+		var collider = get_slide_collision(i).get_collider()
+		if collider.name == "player":
+			collider.touched_by_enemy(self, delta)
