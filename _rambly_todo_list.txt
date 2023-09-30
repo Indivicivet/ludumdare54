@@ -1,0 +1,19 @@
+MVP
+- respawn enemies
+- enemies hurt you
+- score
+
+MLP #1
+- char ground as you fire (main mechanic)
+
+MLP
+- replace the placeholdery player/enemy icons
+- sort out fire rate
+- additional enemy type
+- difficulty tweaking
+- bgm
+
+bonus
+- highlight outer border tiles differently
+- different maps
+- alt fire?
