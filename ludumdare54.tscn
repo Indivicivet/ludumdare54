@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b4o7w1uc8bq1o"]
+[gd_scene load_steps=12 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Script" path="res://scripts/spacescroll.gd" id="1_8oy62"]
 [ext_resource type="Script" path="res://global_game_manager.gd" id="1_v3hpp"]
@@ -8,13 +8,10 @@
 [ext_resource type="Script" path="res://scripts/gun1.gd" id="5_1et4n"]
 [ext_resource type="Texture2D" uid="uid://dyql1ycffaje6" path="res://graphics/player0001.png" id="6_w1o1e"]
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="7_p865s"]
-[ext_resource type="Script" path="res://scripts/enemy_type1.gd" id="9_06evh"]
+[ext_resource type="PackedScene" uid="uid://c4i8t3vyd1rqu" path="res://enemy_type_1.tscn" id="9_1g1nj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
 radius = 26.0192
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_n466h"]
-radius = 24.0208
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0n3p2"]
 vertices = PackedVector2Array(411, 178, 805, 177, 805, 573, 409, 571)
@@ -253,18 +250,19 @@ script = ExtResource("5_1et4n")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 shape = SubResource("CircleShape2D_gwbx5")
 
-[node name="enemy_type1" type="CharacterBody2D" parent="."]
-position = Vector2(746, 245)
-script = ExtResource("9_06evh")
+[node name="enemy_type1" parent="." instance=ExtResource("9_1g1nj")]
 
-[node name="Sprite2D" type="Sprite2D" parent="enemy_type1"]
-modulate = Color(0.501961, 0.501961, 0.501961, 1)
-texture = ExtResource("6_w1o1e")
+[node name="enemy_type2" parent="." instance=ExtResource("9_1g1nj")]
+position = Vector2(471, 222)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_type1"]
-shape = SubResource("CircleShape2D_n466h")
+[node name="enemy_type3" parent="." instance=ExtResource("9_1g1nj")]
+position = Vector2(574, 219)
 
-[node name="NavigationAgent2D" type="NavigationAgent2D" parent="enemy_type1"]
+[node name="enemy_type4" parent="." instance=ExtResource("9_1g1nj")]
+position = Vector2(666, 226)
+
+[node name="enemy_type5" parent="." instance=ExtResource("9_1g1nj")]
+position = Vector2(760, 339)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_0n3p2")
