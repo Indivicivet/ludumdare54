@@ -9,7 +9,9 @@ var hp = 1
 
 @onready var navigation_agent = get_node("NavigationAgent2D")
 @onready var sprite_obj = get_node("Sprite2D")
-@onready var player = get_tree().get_root().get_node("game_root").get_node("player")
+@onready var root = get_tree().get_root().get_node("game_root")
+@onready var player = root.get_node("player")
+@onready var score = root.get_node("score")
 
 
 func _ready():
@@ -22,6 +24,7 @@ func got_shot(other):
 	hp -= 0.02
 	sprite_obj.modulate = Color(hp / 2, hp / 2, hp / 2)
 	if hp < 0:
+		score.score += 1
 		queue_free()
 
 
