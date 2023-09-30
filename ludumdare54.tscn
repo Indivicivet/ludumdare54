@@ -30,37 +30,34 @@ texture = ExtResource("1_ix00u")
 position = Vector2(610, 373)
 
 [node name="block_solid" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-224, -225)
+position = Vector2(-224, -224)
 
 [node name="block_solid2" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-160, -225)
+position = Vector2(-160, -224)
 
 [node name="block_solid3" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-96, -225)
+position = Vector2(-96, -224)
 
 [node name="block_solid4" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-32, -225)
+position = Vector2(-32, -224)
 
 [node name="block_solid5" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(32, -225)
+position = Vector2(32, -224)
 
 [node name="block_solid6" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(96, -225)
-
-[node name="block_solid7" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(158, -225)
+position = Vector2(96, -224)
 
 [node name="block_solid8" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(160, -225)
+position = Vector2(160, -224)
 
 [node name="block_solid9" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(224, -225)
+position = Vector2(224, -224)
 
 [node name="block_solid10" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-224, -161)
+position = Vector2(-224, -160)
 
 [node name="block_solid18" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(224, -161)
+position = Vector2(224, -160)
 
 [node name="block_solid19" parent="many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, -96)
@@ -87,37 +84,37 @@ position = Vector2(-224, 96)
 position = Vector2(224, 96)
 
 [node name="block_solid55" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-224, 161)
+position = Vector2(-224, 160)
 
 [node name="block_solid63" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(224, 161)
+position = Vector2(224, 160)
 
 [node name="block_solid64" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-224, 225)
+position = Vector2(-224, 224)
 
 [node name="block_solid65" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-160, 225)
+position = Vector2(-160, 224)
 
 [node name="block_solid66" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-96, 225)
+position = Vector2(-96, 224)
 
 [node name="block_solid67" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(-32, 225)
+position = Vector2(-32, 224)
 
 [node name="block_solid68" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(32, 225)
+position = Vector2(32, 224)
 
 [node name="block_solid69" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(96, 225)
+position = Vector2(96, 224)
 
 [node name="block_solid70" parent="many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(158, 225)
 
 [node name="block_solid71" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(160, 225)
+position = Vector2(160, 224)
 
 [node name="block_solid72" parent="many_blocks" instance=ExtResource("3_d706m")]
-position = Vector2(224, 225)
+position = Vector2(224, 224)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(589, 366)
