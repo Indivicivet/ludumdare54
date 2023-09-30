@@ -22,11 +22,11 @@ func choose_direction():
 func _process(delta):
 	self.position.x += SPEED * dir_cos;
 	self.position.y += SPEED * dir_sin;
-	if self.position.x > WIDTH * 3/2:
+	if self.position.x > 0:
 		self.position.x -= WIDTH;
-	if self.position.x < -WIDTH * 0.5:
+	if self.position.x < -WIDTH:
 		self.position.x += WIDTH;
-	if self.position.y > HEIGHT * 3/2:
+	if self.position.y > 0:
 		self.position.y -= HEIGHT;
-	if self.position.y < -HEIGHT * 0.5:
+	if self.position.y < -HEIGHT:
 		self.position.y += HEIGHT;
