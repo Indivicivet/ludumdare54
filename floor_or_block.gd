@@ -11,12 +11,12 @@ var healing = 0.0
 
 func liquify():
 	get_node("tilesprite").texture = sprite_floor
-	get_node("CollisionShape2D").disabled = true
+	get_node("CollisionShape2D").set_deferred("disabled", true)
 
 
 func solidify():
 	get_node("tilesprite").texture = sprite_solid
-	get_node("CollisionShape2D").disabled = false
+	get_node("CollisionShape2D").set_deferred("disabled", false)
 
 
 func got_shot(other):
