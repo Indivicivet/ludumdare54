@@ -25,3 +25,13 @@ func _physics_process(delta):
 
 func touched_by_enemy(other, delta):
 	health -= delta * 0.06
+	if health < 0:
+		health = 0
+		die()
+
+
+func die():
+	set_process(false)
+	set_physics_process(false)
+	get_node("gun1").set_process(false)
+	hide()
