@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b4o7w1uc8bq1o"]
+[gd_scene load_steps=17 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Script" path="res://scripts/spacescroll.gd" id="1_8oy62"]
 [ext_resource type="Script" path="res://scripts/global_game_manager.gd" id="1_hjkb4"]
@@ -9,8 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://dyql1ycffaje6" path="res://graphics/player0001.png" id="6_w1o1e"]
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="7_p865s"]
 [ext_resource type="PackedScene" uid="uid://c4i8t3vyd1rqu" path="res://enemy_type_1.tscn" id="9_1g1nj"]
+[ext_resource type="Script" path="res://player_health.gd" id="9_ypba0"]
 [ext_resource type="PackedScene" uid="uid://d2mwe78xq0kar" path="res://score.tscn" id="10_5oqj3"]
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="11_gi10b"]
+[ext_resource type="Texture2D" uid="uid://dm7cxf1pr2r2f" path="res://graphics/tex3_0001__P2000288.png" id="12_088op"]
+[ext_resource type="Script" path="res://health_indicator.gd" id="12_jh7kp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
 radius = 26.0192
@@ -252,6 +255,9 @@ script = ExtResource("5_1et4n")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 shape = SubResource("CircleShape2D_gwbx5")
 
+[node name="player_health" type="Node2D" parent="player"]
+script = ExtResource("9_ypba0")
+
 [node name="enemy_type1" parent="." instance=ExtResource("9_1g1nj")]
 
 [node name="enemy_type2" parent="." instance=ExtResource("9_1g1nj")]
@@ -279,5 +285,15 @@ script = ExtResource("11_gi10b")
 [node name="Timer" type="Timer" parent="enemy_spawner"]
 wait_time = 2.0
 autostart = true
+
+[node name="health_indicator" type="Node2D" parent="."]
+position = Vector2(607, 675)
+script = ExtResource("12_jh7kp")
+
+[node name="Sprite2D" type="Sprite2D" parent="health_indicator"]
+position = Vector2(2, -2)
+texture = ExtResource("12_088op")
+region_enabled = true
+region_rect = Rect2(0, 0, 400, 50)
 
 [connection signal="timeout" from="enemy_spawner/Timer" to="enemy_spawner" method="_on_timer_timeout"]
