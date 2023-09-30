@@ -60,5 +60,5 @@ func _ready():
 
 
 func _process(delta):
-	# print(charring)
-	charr(0.1 * delta)
+	# still to decide if there should be any passive charring
+	charr(0.03 * delta)
