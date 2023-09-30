@@ -12,4 +12,5 @@ func _physics_process(delta):
 
 
 func _on_body_entered(body):
-	queue_free()
+	if not body.name == "player":
+		queue_free()
