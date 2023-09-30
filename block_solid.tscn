@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dmbopa58apven"]
 
-[ext_resource type="Texture2D" uid="uid://dql0beg06i55b" path="res://icon.svg" id="1_xqww1"]
+[ext_resource type="Texture2D" uid="uid://dm7cxf1pr2r2f" path="res://tex3_0001__P2000288.png" id="1_6p85x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0201y"]
 size = Vector2(64, 64)
@@ -9,7 +9,7 @@ size = Vector2(64, 64)
 position = Vector2(0, -1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_xqww1")
+texture = ExtResource("1_6p85x")
 region_enabled = true
 region_rect = Rect2(24, 24, 64, 64)
 
