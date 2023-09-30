@@ -13,7 +13,7 @@
 texture = ExtResource("1_ix00u")
 
 [node name="space2" type="Sprite2D" parent="spacescroll"]
-position = Vector2(2592, 7)
+position = Vector2(2592, 0)
 texture = ExtResource("1_ix00u")
 
 [node name="space3" type="Sprite2D" parent="spacescroll"]
