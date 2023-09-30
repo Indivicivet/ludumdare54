@@ -52,7 +52,7 @@ func charr(amt):
 
 
 func got_shot(other):
-	heal(0.1)
+	heal(0.03)
 
 
 func _ready():
