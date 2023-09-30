@@ -3,6 +3,7 @@ MVP
 - enemies hurt you/healthbar
 - dying
 - score
+^ ALL DONE!! ^__^
 
 MLP #1
 - char ground as you fire (main mechanic)
@@ -26,3 +27,4 @@ bonus
 - sfx for spawning/killing enemies
 - sort out how slopes are treated (since we're top-down) - up_direction etc
 - better dying ^^
+- enemy spawn anim or other indicator
