@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b4o7w1uc8bq1o"]
+[gd_scene load_steps=14 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Script" path="res://scripts/spacescroll.gd" id="1_8oy62"]
 [ext_resource type="Script" path="res://scripts/global_game_manager.gd" id="1_hjkb4"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="7_p865s"]
 [ext_resource type="PackedScene" uid="uid://c4i8t3vyd1rqu" path="res://enemy_type_1.tscn" id="9_1g1nj"]
 [ext_resource type="PackedScene" uid="uid://d2mwe78xq0kar" path="res://score.tscn" id="10_5oqj3"]
+[ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="11_gi10b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
 radius = 26.0192
@@ -270,3 +271,13 @@ navigation_polygon = SubResource("NavigationPolygon_0n3p2")
 
 [node name="score" parent="." instance=ExtResource("10_5oqj3")]
 position = Vector2(648, 68)
+
+[node name="enemy_spawner" type="Node2D" parent="."]
+position = Vector2(614, 371)
+script = ExtResource("11_gi10b")
+
+[node name="Timer" type="Timer" parent="enemy_spawner"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="enemy_spawner/Timer" to="enemy_spawner" method="_on_timer_timeout"]
