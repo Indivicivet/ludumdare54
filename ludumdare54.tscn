@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dmbopa58apven" path="res://block_solid.tscn" id="3_d706m"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="4_niys2"]
 [ext_resource type="Script" path="res://scripts/gun1.gd" id="5_1et4n"]
-[ext_resource type="Texture2D" uid="uid://dql0beg06i55b" path="res://graphics/icon.svg" id="5_5p1cn"]
+[ext_resource type="Texture2D" uid="uid://dyql1ycffaje6" path="res://graphics/player0001.png" id="6_w1o1e"]
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="7_p865s"]
 
 [node name="Node2D" type="Node2D"]
@@ -230,12 +230,12 @@ position = Vector2(589, 366)
 script = ExtResource("4_niys2")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("5_5p1cn")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player"]
-scale = Vector2(0.2, 0.2)
-polygon = PackedVector2Array(64, -59.6, 64, 59, 59.6, 64, -59, 64, -64, 59.6, -64, -59.6, -59, -63.9, 59, -64)
+scale = Vector2(1.03, 1.03)
+texture = ExtResource("6_w1o1e")
 
 [node name="gun1" type="Node2D" parent="player"]
 script = ExtResource("5_1et4n")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player"]
+scale = Vector2(1.03, 1.03)
+polygon = PackedVector2Array(10, -23, 12, -23, 12, -22, 14, -22, 14, -21, 16, -21, 16, -20, 17, -20, 17, -19, 18, -19, 18, -18, 20, -18, 20, -17, 21, -17, 21, -15, 22, -15, 22, -14, 23, -14, 23, -13, 24, -13, 24, -9, 25, -9, 25, 10, 24, 10, 24, 14, 23, 14, 23, 15, 22, 15, 22, 16, 21, 16, 21, 18, 20, 18, 20, 19, 18, 19, 18, 20, 17, 20, 17, 21, 16, 21, 16, 22, 14, 22, 14, 23, 12, 23, 12, 24, 10, 24, 10, 25, -11, 25, -11, 24, -13, 24, -13, 23, -15, 23, -15, 22, -17, 22, -17, 21, -18, 21, -18, 20, -19, 20, -19, 19, -21, 19, -21, 18, -22, 18, -22, 16, -23, 16, -23, 15, -24, 15, -24, 14, -25, 14, -25, 10, -26, 10, -26, -9, -25, -9, -25, -13, -24, -13, -24, -14, -23, -14, -23, -15, -22, -15, -22, -17, -21, -17, -21, -18, -19, -18, -19, -19, -18, -19, -18, -20, -17, -20, -17, -21, -15, -21, -15, -22, -13, -22, -13, -23, -11, -23, -11, -24, 10, -24)
