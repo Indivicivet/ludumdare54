@@ -12,5 +12,7 @@ func _physics_process(delta):
 
 
 func _on_body_entered(body):
+	if body.has_method("got_shot"):
+		body.got_shot(self)
 	if not body.name == "player":
 		queue_free()
