@@ -4,4 +4,5 @@
 # also a thing?
 .mono/
 
-.hand_builds
+.hand_builds/
+.build/
