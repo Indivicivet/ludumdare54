@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://scripts/blocksprite.gd" id="2_jgymb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0201y"]
-size = Vector2(64, 64)
+size = Vector2(62, 62)
 
 [node name="floor_or_block" type="StaticBody2D"]
 position = Vector2(0, -1)
