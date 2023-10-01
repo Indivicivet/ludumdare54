@@ -24,7 +24,7 @@ probably-MLP
 - move spawner sometimes
 - sort out fire rate DONE
 - difficulty tweaking
-- bgm
+- bgm DONE BADLY :)
 - icons / other project metadata
 
 bonus
