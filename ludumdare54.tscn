@@ -44,7 +44,7 @@ script = ExtResource("12_30iwo")
 [node name="Sprite2Dbg" type="Sprite2D" parent="health_indicator"]
 texture = ExtResource("14_i6hpi")
 region_enabled = true
-region_rect = Rect2(0, 0, 410, 60)
+region_rect = Rect2(216, 18, 410, 60)
 
 [node name="Sprite2D" type="Sprite2D" parent="health_indicator"]
 texture = ExtResource("12_088op")
