@@ -17,6 +17,7 @@ MLP #1
 not done...
 
 probably-MLP
+- less silly losing sound...?
 - sensible not spawning blocks under you?/letting you get pushed outside
 - replace the placeholdery player/enemy icons DONE
 - make clearer spawner isn't solid
