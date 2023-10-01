@@ -9,13 +9,17 @@ MLP #1
 - char ground as you fire (main mechanic)
 
 MLP
+PRIORITY
+- pathfinding logic sit totally broken so fix that
+- fix the restart/retry after you die
+- additional enemy type
+
+probably-MLP
 - sensible not spawning blocks under you?/letting you get pushed outside
-- sensible restart/retry after you die
 - replace the placeholdery player/enemy icons
 - make clearer spawner isn't solid
 - move spawner sometimes
 - sort out fire rate
-- additional enemy type
 - difficulty tweaking
 - bgm
 
