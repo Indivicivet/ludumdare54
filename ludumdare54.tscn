@@ -270,12 +270,17 @@ navigation_polygon = SubResource("NavigationPolygon_0n3p2")
 position = Vector2(648, 68)
 
 [node name="enemy_spawner" type="Node2D" parent="."]
-position = Vector2(614, 371)
+position = Vector2(642, 342)
 script = ExtResource("11_gi10b")
 
 [node name="Timer" type="Timer" parent="enemy_spawner"]
 wait_time = 2.0
 autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="enemy_spawner"]
+texture = ExtResource("2_fxmil")
+region_enabled = true
+region_rect = Rect2(482.14, 340.19, 16, 16)
 
 [node name="health_indicator" type="Node2D" parent="."]
 position = Vector2(610, 675)
