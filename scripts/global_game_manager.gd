@@ -13,4 +13,5 @@ func _process(_delta):
 		get_node("play_region").queue_free()
 		var inst = play_region.instantiate()
 		add_child(inst)
+		inst.set_name("play_region")
 		inst.transform.origin = pos;
