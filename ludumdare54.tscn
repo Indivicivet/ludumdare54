@@ -33,7 +33,7 @@ texture = ExtResource("2_fxmil")
 [node name="play_region" parent="." instance=ExtResource("4_ion4y")]
 
 [node name="score" parent="." instance=ExtResource("10_5oqj3")]
-position = Vector2(648, 68)
+position = Vector2(604, 60)
 
 [node name="health_indicator" type="Node2D" parent="."]
 position = Vector2(610, 675)
