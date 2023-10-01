@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b4o7w1uc8bq1o"]
+[gd_scene load_steps=18 format=3 uid="uid://b4o7w1uc8bq1o"]
 
 [ext_resource type="Script" path="res://scripts/spacescroll.gd" id="1_8oy62"]
 [ext_resource type="Script" path="res://scripts/global_game_manager.gd" id="1_hjkb4"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="11_gi10b"]
 [ext_resource type="Script" path="res://scripts/health_indicator.gd" id="12_30iwo"]
 [ext_resource type="Texture2D" uid="uid://dm7cxf1pr2r2f" path="res://graphics/tex3_0001__P2000288.png" id="12_088op"]
+[ext_resource type="Script" path="res://score_dependent_timer.gd" id="12_m5ykj"]
 [ext_resource type="Texture2D" uid="uid://bf1ro4eol7gxo" path="res://graphics/tex1_0001__P2000281.png" id="14_i6hpi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
@@ -276,6 +277,7 @@ script = ExtResource("11_gi10b")
 [node name="Timer" type="Timer" parent="enemy_spawner"]
 wait_time = 2.0
 autostart = true
+script = ExtResource("12_m5ykj")
 
 [node name="Sprite2D" type="Sprite2D" parent="enemy_spawner"]
 texture = ExtResource("2_fxmil")
