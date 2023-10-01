@@ -4,7 +4,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 
 var health = 1.0
-
+var dead = false
 
 var rng = RandomNumberGenerator.new()
 
@@ -27,6 +27,8 @@ func _physics_process(_delta):
 
 
 func touched_by_enemy(_other, delta):
+	if dead:
+		return
 	health -= delta * 0.06
 	if health > 0 and rng.randf() < 4 * delta:
 		get_node("im_hit_sound").play()
@@ -36,6 +38,7 @@ func touched_by_enemy(_other, delta):
 
 
 func die():
+	dead = true
 	get_node("death_sound").play()
 	set_process(false)
 	set_physics_process(false)
