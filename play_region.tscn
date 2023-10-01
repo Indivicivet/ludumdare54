@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cp0yxdyvc0e8p"]
+[gd_scene load_steps=13 format=3 uid="uid://cp0yxdyvc0e8p"]
 
 [ext_resource type="PackedScene" uid="uid://dmbopa58apven" path="res://block_solid.tscn" id="1_kwwif"]
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="2_n327o"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="7_775sp"]
 [ext_resource type="Script" path="res://score_dependent_timer.gd" id="8_gevqa"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://graphics/tex2_0001__P2000288.png" id="9_xhior"]
+[ext_resource type="AudioStream" uid="uid://dmnxvh5oj8nrq" path="res://sfx/enemyspawn0001.wav" id="10_yhfqt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
 radius = 26.0192
@@ -258,5 +259,8 @@ script = ExtResource("8_gevqa")
 texture = ExtResource("9_xhior")
 region_enabled = true
 region_rect = Rect2(482.14, 340.19, 16, 16)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="enemy_spawner"]
+stream = ExtResource("10_yhfqt")
 
 [connection signal="timeout" from="enemy_spawner/Timer" to="enemy_spawner" method="_on_timer_timeout"]
