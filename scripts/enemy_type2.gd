@@ -22,7 +22,7 @@ func _ready():
 
 
 func got_shot(_other):
-	hp -= 0.01  # CHANGED VS TYPE 1
+	hp -= 0.015  # CHANGED VS TYPE 1
 	sprite_obj.modulate = Color(hp, hp, hp)
 	if hp < 0:
 		score.score += 1
