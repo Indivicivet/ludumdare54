@@ -68,7 +68,7 @@ func charr(amt):
 
 
 func got_shot(_other):
-	heal(0.03)
+	heal(0.067)
 
 
 func _process(delta):
