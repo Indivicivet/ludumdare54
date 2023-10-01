@@ -5,21 +5,23 @@ MVP
 - score
 ^ ALL DONE!! ^__^
 
-MLP #1
-- char ground as you fire (main mechanic)
-
 MLP
 PRIORITY
 - pathfinding logic sit totally broken so fix that
 - fix the restart/retry after you die
 - additional enemy type
+^ DONE!
+
+MLP #1
+- char ground as you fire (main mechanic)
+not done...
 
 probably-MLP
 - sensible not spawning blocks under you?/letting you get pushed outside
-- replace the placeholdery player/enemy icons
+- replace the placeholdery player/enemy icons DONE
 - make clearer spawner isn't solid
 - move spawner sometimes
-- sort out fire rate
+- sort out fire rate DONE
 - difficulty tweaking
 - bgm
 - icons / other project metadata
