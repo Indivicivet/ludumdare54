@@ -1,13 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2mwe78xq0kar"]
+[gd_scene load_steps=3 format=3 uid="uid://d2mwe78xq0kar"]
 
 [ext_resource type="Script" path="res://scripts/score.gd" id="1_pwfah"]
+[ext_resource type="Texture2D" uid="uid://do2wo51nwtb7b" path="res://graphics/font/font0__P2000288.png" id="2_5jkmq"]
 
 [node name="score" type="Node2D"]
 script = ExtResource("1_pwfah")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = -136.0
-offset_top = -19.0
-offset_right = 141.0
-offset_bottom = 21.0
-text = "Score: 0"
+[node name="digits" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+texture = ExtResource("2_5jkmq")
+
+[node name="tens" type="Sprite2D" parent="."]
+texture = ExtResource("2_5jkmq")
+
+[node name="hundreds" type="Sprite2D" parent="."]
+position = Vector2(-64, 0)
+texture = ExtResource("2_5jkmq")
