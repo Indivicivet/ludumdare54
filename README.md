@@ -1,6 +1,6 @@
 # ludumdare54
 
-created in 48 hours for ludum dare 54
+floating rock in space :: created in 48 hours for ludum dare 54
 
 ## Controls
 
