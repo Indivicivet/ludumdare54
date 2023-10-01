@@ -15,6 +15,10 @@ run/main_scene="res://ludumdare54.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+EventsHandler="*res://scripts/events_handler.gd"
+
 [display]
 
 window/size/viewport_width=1280

@@ -6,7 +6,8 @@ const TILES_N = 6
 const TILES_M = 6
 
 
-func _ready():
+func update_nav_polygon():
+	print("updating")
 	var polygon = NavigationPolygon.new()
 	var vertices = PackedVector2Array([])
 	for j in range(TILES_M + 1):
@@ -28,5 +29,6 @@ func _ready():
 	navigation_polygon = polygon
 
 
-func _process(delta):
-	pass
+func _ready():
+	update_nav_polygon()
+	EventsHandler.connect("tile_changed", update_nav_polygon)

@@ -26,6 +26,7 @@ func liquify():
 	charring = 0
 	collision_obj.set_deferred("disabled", true)
 	is_solid = false
+	EventsHandler.emit_signal("tile_changed")
 	# visual/etc updates:
 	sprite_obj.texture = sprite_floor
 	sprite_obj.modulate = Color(1, 1, 1)
@@ -38,6 +39,7 @@ func solidify():
 	charring = 0
 	collision_obj.set_deferred("disabled", false)
 	is_solid = true
+	EventsHandler.emit_signal("tile_changed")
 	# visual/etc updates:
 	sprite_obj.texture = sprite_solid
 	sprite_obj.modulate = Color(1, 1, 1)
