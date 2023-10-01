@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://scripts/gun1.gd" id="5_stter"]
 [ext_resource type="PackedScene" uid="uid://c4i8t3vyd1rqu" path="res://enemy_type_1.tscn" id="6_l52lc"]
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="7_775sp"]
-[ext_resource type="Script" path="res://navigation_active_tiles.gd" id="7_kktaf"]
+[ext_resource type="Script" path="res://scripts/navigation_active_tiles.gd" id="7_ivpq0"]
 [ext_resource type="Script" path="res://scripts/score_dependent_timer.gd" id="8_adhp6"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://graphics/tex2_0001__P2000288.png" id="9_xhior"]
 [ext_resource type="AudioStream" uid="uid://dmnxvh5oj8nrq" path="res://sfx/enemyspawn0001.wav" id="10_yhfqt"]
@@ -244,7 +244,7 @@ position = Vector2(-37, -154)
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 position = Vector2(-193, -192)
 navigation_polygon = SubResource("NavigationPolygon_t6llx")
-script = ExtResource("7_kktaf")
+script = ExtResource("7_ivpq0")
 
 [node name="enemy_spawner" type="Node2D" parent="."]
 position = Vector2(31, -31)
