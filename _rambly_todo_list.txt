@@ -28,3 +28,4 @@ bonus
 - sort out how slopes are treated (since we're top-down) - up_direction etc
 - better dying ^^
 - enemy spawn anim or other indicator
+- smooth out the background moving
