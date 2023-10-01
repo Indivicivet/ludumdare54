@@ -10,7 +10,7 @@ var hp = 1
 @onready var navigation_agent = get_node("NavigationAgent2D")
 @onready var sprite_obj = get_node("Sprite2D")
 @onready var root = get_tree().get_root().get_node("game_root")
-@onready var player = root.get_node("player")
+@onready var player = root.get_node("play_region/player")
 @onready var score = root.get_node("score")
 
 

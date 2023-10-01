@@ -20,9 +20,9 @@
 radius = 26.0192
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0n3p2"]
-vertices = PackedVector2Array(411, 178, 805, 177, 805, 573, 409, 571)
+vertices = PackedVector2Array(-204, -204, 200, -203, 201, 201, -202, 203)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(411, 178, 805, 177, 805, 573, 409, 571)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-204, -204, 200, -203, 201, 201, -202, 203)])
 
 [node name="game_root" type="Node2D"]
 script = ExtResource("1_hjkb4")
@@ -45,244 +45,249 @@ texture = ExtResource("2_fxmil")
 position = Vector2(2592, 1944)
 texture = ExtResource("2_fxmil")
 
-[node name="many_blocks" type="Node2D" parent="."]
-position = Vector2(610, 373)
+[node name="play_region" type="Node2D" parent="."]
+position = Vector2(607, 363)
 
-[node name="block_solid" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="many_blocks" type="Node2D" parent="play_region"]
+position = Vector2(-1, 0)
+
+[node name="block_solid" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, -224)
 
-[node name="block_solid2" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid2" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-160, -224)
 
-[node name="block_solid3" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid3" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-96, -224)
 
-[node name="block_solid4" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid4" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-32, -224)
 
-[node name="block_solid5" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid5" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(32, -224)
 
-[node name="block_solid6" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid6" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(96, -224)
 
-[node name="block_solid8" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid8" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(160, -224)
 
-[node name="block_solid9" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid9" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, -224)
 
-[node name="block_solid10" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid10" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, -160)
 
-[node name="block_solid18" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid18" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, -160)
 
-[node name="block_solid19" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid19" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, -96)
 
-[node name="block_solid27" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid27" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, -96)
 
-[node name="block_solid28" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid28" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, -32)
 
-[node name="block_solid36" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid36" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, -32)
 
-[node name="block_solid37" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid37" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, 32)
 
-[node name="block_solid45" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid45" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, 32)
 
-[node name="block_solid46" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid46" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, 96)
 
-[node name="block_solid54" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid54" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, 96)
 
-[node name="block_solid55" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid55" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, 160)
 
-[node name="block_solid63" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid63" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, 160)
 
-[node name="block_solid64" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid64" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-224, 224)
 
-[node name="block_solid65" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid65" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-160, 224)
 
-[node name="block_solid66" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid66" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-96, 224)
 
-[node name="block_solid67" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid67" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(-32, 224)
 
-[node name="block_solid68" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid68" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(32, 224)
 
-[node name="block_solid69" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid69" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(96, 224)
 
-[node name="block_solid71" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid71" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(160, 224)
 
-[node name="block_solid72" parent="many_blocks" instance=ExtResource("3_d706m")]
+[node name="block_solid72" parent="play_region/many_blocks" instance=ExtResource("3_d706m")]
 position = Vector2(224, 224)
 
-[node name="manytiles" type="Node2D" parent="."]
+[node name="manytiles" type="Node2D" parent="play_region"]
+position = Vector2(-611, -373)
 
-[node name="floor_or_block" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(450, 213)
 
-[node name="floor_or_block2" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block2" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(514, 213)
 
-[node name="floor_or_block3" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block3" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(578, 213)
 
-[node name="floor_or_block4" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block4" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(642, 213)
 
-[node name="floor_or_block5" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block5" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(706, 213)
 
-[node name="floor_or_block6" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block6" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(770, 213)
 
-[node name="floor_or_block7" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block7" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(450, 277)
 
-[node name="floor_or_block8" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block8" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(514, 277)
 
-[node name="floor_or_block9" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block9" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(578, 277)
 
-[node name="floor_or_block10" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block10" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(642, 277)
 
-[node name="floor_or_block11" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block11" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(706, 277)
 
-[node name="floor_or_block12" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block12" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(770, 277)
 
-[node name="floor_or_block13" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block13" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(450, 341)
 
-[node name="floor_or_block14" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block14" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(514, 341)
 
-[node name="floor_or_block15" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block15" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(578, 341)
 
-[node name="floor_or_block16" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block16" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(642, 341)
 
-[node name="floor_or_block17" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block17" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(706, 341)
 
-[node name="floor_or_block18" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block18" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(770, 341)
 
-[node name="floor_or_block19" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block19" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(450, 405)
 
-[node name="floor_or_block20" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block20" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(514, 405)
 
-[node name="floor_or_block21" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block21" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(578, 405)
 
-[node name="floor_or_block22" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block22" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(642, 405)
 
-[node name="floor_or_block23" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block23" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(706, 405)
 
-[node name="floor_or_block24" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block24" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(770, 405)
 
-[node name="floor_or_block25" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block25" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(450, 469)
 
-[node name="floor_or_block26" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block26" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(514, 469)
 
-[node name="floor_or_block27" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block27" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(578, 469)
 
-[node name="floor_or_block28" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block28" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(642, 469)
 
-[node name="floor_or_block29" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block29" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(706, 469)
 
-[node name="floor_or_block30" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block30" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(770, 469)
 
-[node name="floor_or_block31" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block31" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(450, 533)
 
-[node name="floor_or_block32" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block32" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(514, 533)
 
-[node name="floor_or_block33" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block33" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(578, 533)
 
-[node name="floor_or_block34" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block34" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(642, 533)
 
-[node name="floor_or_block35" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block35" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(706, 533)
 
-[node name="floor_or_block36" parent="manytiles" instance=ExtResource("7_p865s")]
+[node name="floor_or_block36" parent="play_region/manytiles" instance=ExtResource("7_p865s")]
 position = Vector2(770, 533)
 
-[node name="player" type="CharacterBody2D" parent="."]
-position = Vector2(589, 366)
+[node name="player" type="CharacterBody2D" parent="play_region"]
+position = Vector2(-22, -7)
 script = ExtResource("4_niys2")
 
-[node name="Sprite2D" type="Sprite2D" parent="player"]
+[node name="Sprite2D" type="Sprite2D" parent="play_region/player"]
 scale = Vector2(1.03, 1.03)
 texture = ExtResource("6_w1o1e")
 
-[node name="gun1" type="Node2D" parent="player"]
+[node name="gun1" type="Node2D" parent="play_region/player"]
 script = ExtResource("5_1et4n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="play_region/player"]
 shape = SubResource("CircleShape2D_gwbx5")
 
-[node name="enemy_type1" parent="." instance=ExtResource("9_1g1nj")]
+[node name="enemy_type1" parent="play_region" instance=ExtResource("9_1g1nj")]
+position = Vector2(135, -128)
 
-[node name="enemy_type1_2" parent="." instance=ExtResource("9_1g1nj")]
-position = Vector2(471, 222)
+[node name="enemy_type1_2" parent="play_region" instance=ExtResource("9_1g1nj")]
+position = Vector2(-140, -151)
 
-[node name="enemy_type1_3" parent="." instance=ExtResource("9_1g1nj")]
-position = Vector2(574, 219)
+[node name="enemy_type1_3" parent="play_region" instance=ExtResource("9_1g1nj")]
+position = Vector2(-37, -154)
 
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="play_region"]
 navigation_polygon = SubResource("NavigationPolygon_0n3p2")
 
-[node name="score" parent="." instance=ExtResource("10_5oqj3")]
-position = Vector2(648, 68)
-
-[node name="enemy_spawner" type="Node2D" parent="."]
-position = Vector2(642, 342)
+[node name="enemy_spawner" type="Node2D" parent="play_region"]
+position = Vector2(31, -31)
 script = ExtResource("11_gi10b")
 
-[node name="Timer" type="Timer" parent="enemy_spawner"]
+[node name="Timer" type="Timer" parent="play_region/enemy_spawner"]
 wait_time = 2.0
 autostart = true
 script = ExtResource("12_m5ykj")
 
-[node name="Sprite2D" type="Sprite2D" parent="enemy_spawner"]
+[node name="Sprite2D" type="Sprite2D" parent="play_region/enemy_spawner"]
 texture = ExtResource("2_fxmil")
 region_enabled = true
 region_rect = Rect2(482.14, 340.19, 16, 16)
+
+[node name="score" parent="." instance=ExtResource("10_5oqj3")]
+position = Vector2(648, 68)
 
 [node name="health_indicator" type="Node2D" parent="."]
 position = Vector2(610, 675)
@@ -298,4 +303,4 @@ texture = ExtResource("12_088op")
 region_enabled = true
 region_rect = Rect2(0, 0, 500, 50)
 
-[connection signal="timeout" from="enemy_spawner/Timer" to="enemy_spawner" method="_on_timer_timeout"]
+[connection signal="timeout" from="play_region/enemy_spawner/Timer" to="play_region/enemy_spawner" method="_on_timer_timeout"]
