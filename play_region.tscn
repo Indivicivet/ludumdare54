@@ -8,8 +8,8 @@
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="7_775sp"]
 [ext_resource type="Script" path="res://scripts/navigation_active_tiles.gd" id="7_ivpq0"]
 [ext_resource type="AudioStream" uid="uid://dywjwuj4uq6l2" path="res://sfx/genericexplosion0001.wav" id="7_x48ig"]
+[ext_resource type="Texture2D" uid="uid://dn1dtlaqbq5sr" path="res://graphics/player_0004__P2000287.png" id="8_0grxu"]
 [ext_resource type="Script" path="res://scripts/score_dependent_timer.gd" id="8_adhp6"]
-[ext_resource type="Texture2D" uid="uid://dmaeex6irvlwl" path="res://graphics/player_0003__P2000287.png" id="8_k3siv"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://graphics/tex2_0001__P2000288.png" id="9_xhior"]
 [ext_resource type="AudioStream" uid="uid://dmnxvh5oj8nrq" path="res://sfx/enemyspawn0001.wav" id="10_yhfqt"]
 
@@ -243,7 +243,7 @@ script = ExtResource("3_r6iub")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
 scale = Vector2(1.03, 1.03)
-texture = ExtResource("8_k3siv")
+texture = ExtResource("8_0grxu")
 
 [node name="gun1" type="Node2D" parent="player"]
 script = ExtResource("5_stter")
