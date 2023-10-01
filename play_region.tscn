@@ -4,13 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="2_n327o"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="3_r6iub"]
 [ext_resource type="Script" path="res://scripts/gun1.gd" id="5_stter"]
-[ext_resource type="AudioStream" uid="uid://2tktx7pq43t3" path="res://sfx/lose0001.wav" id="6_ambdy"]
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="7_775sp"]
 [ext_resource type="Script" path="res://scripts/navigation_active_tiles.gd" id="7_ivpq0"]
 [ext_resource type="AudioStream" uid="uid://dywjwuj4uq6l2" path="res://sfx/genericexplosion0001.wav" id="7_x48ig"]
 [ext_resource type="Texture2D" uid="uid://dn1dtlaqbq5sr" path="res://graphics/player_0004__P2000287.png" id="8_0grxu"]
 [ext_resource type="Script" path="res://scripts/score_dependent_timer.gd" id="8_adhp6"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://graphics/tex2_0001__P2000288.png" id="9_xhior"]
+[ext_resource type="AudioStream" uid="uid://crpbblvhh2cc6" path="res://sfx/lose0002.wav" id="10_8vxmi"]
 [ext_resource type="AudioStream" uid="uid://dmnxvh5oj8nrq" path="res://sfx/enemyspawn0001.wav" id="10_yhfqt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
@@ -252,7 +252,7 @@ script = ExtResource("5_stter")
 shape = SubResource("CircleShape2D_gwbx5")
 
 [node name="death_sound" type="AudioStreamPlayer2D" parent="player"]
-stream = ExtResource("6_ambdy")
+stream = ExtResource("10_8vxmi")
 volume_db = 3.0
 
 [node name="im_hit_sound" type="AudioStreamPlayer2D" parent="player"]
