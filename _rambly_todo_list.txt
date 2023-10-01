@@ -12,6 +12,8 @@ MLP
 - sensible not spawning blocks under you?/letting you get pushed outside
 - sensible restart/retry after you die
 - replace the placeholdery player/enemy icons
+- make clearer spawner isn't solid
+- move spawner sometimes
 - sort out fire rate
 - additional enemy type
 - difficulty tweaking
