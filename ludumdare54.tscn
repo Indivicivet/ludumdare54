@@ -31,12 +31,13 @@ position = Vector2(2592, 1944)
 texture = ExtResource("2_fxmil")
 
 [node name="play_region" parent="." instance=ExtResource("4_ion4y")]
+position = Vector2(519, 361)
 
 [node name="score" parent="." instance=ExtResource("10_5oqj3")]
-position = Vector2(604, 60)
+position = Vector2(516, 47)
 
 [node name="health_indicator" type="Node2D" parent="."]
-position = Vector2(610, 675)
+position = Vector2(522, 673)
 script = ExtResource("12_30iwo")
 
 [node name="Sprite2Dbg" type="Sprite2D" parent="health_indicator"]
