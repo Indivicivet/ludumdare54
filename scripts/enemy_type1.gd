@@ -15,6 +15,7 @@ var hp = 1
 
 
 func _ready():
+	sprite_obj.modulate = Color(1, 1, 1)
 	navigation_agent.path_desired_distance = 1.0
 	navigation_agent.target_desired_distance = 1.0
 	call_deferred("pathfinding_setup")
@@ -22,7 +23,7 @@ func _ready():
 
 func got_shot(_other):
 	hp -= 0.02
-	sprite_obj.modulate = Color(hp / 2, hp / 2, hp / 2)
+	sprite_obj.modulate = Color(hp, hp, hp)
 	if hp < 0:
 		score.score += 1
 		queue_free()
