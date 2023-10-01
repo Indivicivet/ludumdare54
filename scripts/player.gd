@@ -6,6 +6,9 @@ const SPEED = 300.0
 var health = 1.0
 
 
+var rng = RandomNumberGenerator.new()
+
+
 func _physics_process(_delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -25,12 +28,15 @@ func _physics_process(_delta):
 
 func touched_by_enemy(_other, delta):
 	health -= delta * 0.06
+	if health > 0 and rng.randf() < 4 * delta:
+		get_node("im_hit_sound").play()
 	if health < 0:
 		health = 0
 		die()
 
 
 func die():
+	get_node("death_sound").play()
 	set_process(false)
 	set_physics_process(false)
 	get_node("gun1").set_process(false)
