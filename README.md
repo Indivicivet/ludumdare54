@@ -6,7 +6,7 @@ floating rock in space :: created in 48 hours for ludum dare 54
 
 WASD or arrow keys to move, right click to shoot.
 
-R to restart.
+R to restart. M to mute/unmute background music.
 
 ## Screenshots
 
