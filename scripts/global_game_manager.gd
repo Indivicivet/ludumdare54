@@ -15,3 +15,5 @@ func _process(_delta):
 		add_child(inst)
 		inst.set_name("play_region")
 		inst.transform.origin = pos;
+		# and reset score...
+		get_node("score").score = 0
