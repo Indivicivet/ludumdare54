@@ -10,7 +10,7 @@ func _process(_delta):
 		return
 	if Input.is_action_just_pressed("restart"):
 		var pos = get_node("play_region").transform.get_origin();
-		get_node("play_region").queue_free()
+		get_node("play_region").free()
 		var inst = play_region.instantiate()
 		add_child(inst)
 		inst.set_name("play_region")
