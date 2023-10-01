@@ -71,4 +71,4 @@ func _ready():
 
 func _process(delta):
 	# still to decide if there should be any passive charring
-	charr(0.01 * delta)
+	charr(0.02 * delta)
