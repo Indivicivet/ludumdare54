@@ -22,6 +22,7 @@ probably-MLP
 - sort out fire rate
 - difficulty tweaking
 - bgm
+- icons / other project metadata
 
 bonus
 - window resize not breaking things/keep it centered
