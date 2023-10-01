@@ -61,7 +61,7 @@ func charr(amt):
 		solidify()
 
 
-func got_shot(other):
+func got_shot(_other):
 	heal(0.03)
 
 

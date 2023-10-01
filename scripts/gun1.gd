@@ -7,7 +7,7 @@ var rng = RandomNumberGenerator.new()
 var bullet_type_1 = preload("res://bullet_type_1.tscn")
 
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_pressed("primary_fire"):
 		var bullet_inst = bullet_type_1.instantiate()
 		owner.add_child(bullet_inst)

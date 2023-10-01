@@ -20,7 +20,7 @@ func _ready():
 	call_deferred("pathfinding_setup")
 
 
-func got_shot(other):
+func got_shot(_other):
 	hp -= 0.02
 	sprite_obj.modulate = Color(hp / 2, hp / 2, hp / 2)
 	if hp < 0:
