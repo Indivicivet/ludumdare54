@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cp0yxdyvc0e8p"]
+[gd_scene load_steps=14 format=3 uid="uid://cp0yxdyvc0e8p"]
 
 [ext_resource type="PackedScene" uid="uid://dmbopa58apven" path="res://block_solid.tscn" id="1_kwwif"]
 [ext_resource type="PackedScene" uid="uid://telbw0j0atkg" path="res://floor_or_block.tscn" id="2_n327o"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://scripts/gun1.gd" id="5_stter"]
 [ext_resource type="PackedScene" uid="uid://c4i8t3vyd1rqu" path="res://enemy_type_1.tscn" id="6_l52lc"]
 [ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="7_775sp"]
+[ext_resource type="Script" path="res://navigation_active_tiles.gd" id="7_kktaf"]
 [ext_resource type="Script" path="res://scripts/score_dependent_timer.gd" id="8_adhp6"]
 [ext_resource type="Texture2D" uid="uid://cyx66v7t784tj" path="res://graphics/tex2_0001__P2000288.png" id="9_xhior"]
 [ext_resource type="AudioStream" uid="uid://dmnxvh5oj8nrq" path="res://sfx/enemyspawn0001.wav" id="10_yhfqt"]
@@ -14,10 +15,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_gwbx5"]
 radius = 26.0192
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_0n3p2"]
-vertices = PackedVector2Array(-204, -204, 200, -203, 201, 201, -202, 203)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-204, -204, 200, -203, 201, 201, -202, 203)])
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_t6llx"]
 
 [node name="play_region" type="Node2D"]
 position = Vector2(607, 363)
@@ -244,7 +242,9 @@ position = Vector2(-140, -151)
 position = Vector2(-37, -154)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-navigation_polygon = SubResource("NavigationPolygon_0n3p2")
+position = Vector2(-193, -192)
+navigation_polygon = SubResource("NavigationPolygon_t6llx")
+script = ExtResource("7_kktaf")
 
 [node name="enemy_spawner" type="Node2D" parent="."]
 position = Vector2(31, -31)
