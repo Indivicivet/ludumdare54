@@ -23,7 +23,7 @@ func _ready():
 
 func got_shot(_other):
 	hp -= 0.015  # CHANGED VS TYPE 1
-	sprite_obj.modulate = Color(hp, hp, hp)
+	sprite_obj.modulate = Color(2 - hp, 2 - hp, 2 - hp)  # CHANGED VS TYPE 1
 	if hp < 0:
 		score.score += 1
 		queue_free()
