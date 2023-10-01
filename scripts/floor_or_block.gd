@@ -17,6 +17,10 @@ var healing = 0.0
 var is_solid = false
 
 
+func _ready():
+	charring = rng.randf()
+
+
 func liquify():
 	healing = 0
 	charring = 0
@@ -63,10 +67,6 @@ func charr(amt):
 
 func got_shot(_other):
 	heal(0.03)
-
-
-func _ready():
-	charring = rng.randf()
 
 
 func _process(delta):
