@@ -257,17 +257,11 @@ shape = SubResource("CircleShape2D_gwbx5")
 
 [node name="enemy_type1" parent="." instance=ExtResource("9_1g1nj")]
 
-[node name="enemy_type2" parent="." instance=ExtResource("9_1g1nj")]
+[node name="enemy_type1_2" parent="." instance=ExtResource("9_1g1nj")]
 position = Vector2(471, 222)
 
-[node name="enemy_type3" parent="." instance=ExtResource("9_1g1nj")]
+[node name="enemy_type1_3" parent="." instance=ExtResource("9_1g1nj")]
 position = Vector2(574, 219)
-
-[node name="enemy_type4" parent="." instance=ExtResource("9_1g1nj")]
-position = Vector2(666, 226)
-
-[node name="enemy_type5" parent="." instance=ExtResource("9_1g1nj")]
-position = Vector2(760, 339)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_0n3p2")
