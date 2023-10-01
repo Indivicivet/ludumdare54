@@ -10,7 +10,6 @@ const TILES_M = 6
 
 
 func update_nav_polygon():
-	print("updating")
 	var tiles = manytiles.get_children()
 	assert(tiles.size() == TILES_N * TILES_M)
 	# VERY non-robust, assuming in order. but they are! don't mess this up
