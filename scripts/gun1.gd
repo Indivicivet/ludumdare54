@@ -13,6 +13,7 @@ var fire_next_delay = 0
 func fire_bullet():
 	var bullet_inst = bullet_type_1.instantiate()
 	owner.add_child(bullet_inst)
+	owner.move_child(bullet_inst, 3)
 	bullet_inst.global_transform = self.global_transform
 	var target_dir = (
 		get_local_mouse_position()
